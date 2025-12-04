@@ -1,0 +1,1412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+
+  <!--- favicon-->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--- custom css link-->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--- google font link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!--#MAIN-->
+
+  <main>
+    <!-- #SIDEBAR-->
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar6.png" alt="Malikov Nurdaulet" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Malikov Nurdaulet">Маликов Нурдаулет</h1>
+          <p class="title">Data Engineer · Analyst · Scientist </p>
+          <p class="title" style="margin-top:5px;">Strong Junior Backend Developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Показать контакты</span><ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:malikoff.nurdaulet@gmail.com" class="contact-link">malikoff.nurdaulet@gmail.com</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Номер телефона</p>
+              <a href="tel:+77778811222" class="contact-link">+7 (777) 881-1222</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">День рождения</p>
+              <time datetime="1999-03-21">21 марта, 1999</time>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Местоположение</p>
+              <address>Астана, Казахстан</address>
+            </div>
+          </li>
+        </ul>
+
+        <div class="separator"></div>
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="https://wa.me/77778811222" target="_blank"
+                class="contact-link social-button whatsapp-link"
+                title="Написать в WhatsApp">
+                <ion-icon name="logo-whatsapp"></ion-icon>
+                <span>WhatsApp</span>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="https://t.me/mnurda" target="_blank"
+                class="contact-link social-button telegram-link"
+                title="Написать в Telegram">
+                <ion-icon name="paper-plane-outline"></ion-icon>
+                <span>Telegram</span>
+              </a>
+            </li>
+          </ul>
+      </div>
+    </aside>
+
+    <!-- #MAIN-CONTENT-->
+    <div class="main-content">
+
+      <!--#NAVBAR-->
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item"><button class="navbar-link active" data-nav-link data-page="about">Обо мне</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link data-page="resume">Резюме</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link data-page="portfolio">Проекты</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link data-page="blog">Блог</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link data-page="contact">Контакт</button></li>
+        </ul>
+      </nav>
+
+      <!-- #ABOUT-->
+      <article class="about active" data-page="about">
+        <header>
+          <h2 class="h2 article-title">Обо Мне</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Я — <b>аналитик данных из Астаны (Казахстан) </b>и занимаюсь преобразованием данных в понятные и практичные решения. 
+            В работе придерживаюсь системного подхода: структурирую информацию, выстраиваю логичные процессы и создаю инструменты, 
+            которые помогают командам принимать обоснованные решения.
+          </p>
+          <p>
+            Моя профессиональная деятельность сочетает <b>аналитику, инженерию данных и элементы data science</b>. 
+            Я проектирую корректные пайплайны обработки данных, разрабатываю SQL-витрины, анализирую ключевые метрики, 
+            создаю визуализации, автоматизирую отчётность и разрабатываю модели машинного обучения при необходимости. 
+            Основной приоритет — чтобы любой отчёт, витрина или модель были понятны пользователям и давали предсказуемый, полезный бизнес-результат.
+          </p>
+          <p class="about-lead">Также есть опыт в смежных направлениях:</p>
+          <ul class="about-list">
+            <li><b>Маркетинг</b> (работа с конверсией и воронками, оценка ROMI, прогнозирование спроса, анализ эластичности спроса и предложения, работа с юнит-экономикой)</li>
+            <li><b>Финансы</b> (прогнозирование, моделирование сценариев, инвестиционные расчёты, расчёт NPV, FV, WACC, IRR).</li>
+            <li><b>Управленческий опыт</b> в строительстве (вел проекты по модернизации и возведению коммерческих объектов.  
+            Это дало мне сильные компетенции в операционном управлении, планировании, контроле качества и работе).</li>
+          </ul>
+          <p>
+            Кроме того, имею академическую подготовку в сфере <b>политических наук</b>, что развило стратегическое мышление, понимание процессов и умение смотреть на задачи системно.
+          </p>
+
+          <p class="about-lead">На сайте есть раздел:</p>
+          <ul class="about-list">
+            <li><a href="#" data-go-page="portfolio" class="about-chip">«Проекты»</a> — там собрано реальные кейсы: аналитические дашборды, отчётные системы, ETL-пайплайны и ML-решения.* </li>
+            <li><a href="#" data-go-page="blog" class="about-chip">«Блог»</a> — делюсь инсайтами, заметками и полезными материалами — как для специалистов, так и для тех, кто просто интересуется данными.* </li>
+            <p><i>*В процессе ...</i> </p>
+          </ul>
+        </section>
+
+        <!--SERVICE-->
+        <section class="service">
+          <h3 class="h3 service-title">Профессиональная деятельность</h3>
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design2.svg
+                " alt="design icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title" style="color: var(--orange-yellow-crayola)">Data Analyst</h4>
+                <p class="service-item-text">
+                  Выполняю сбор, структурирование и анализ данных. Готовлю отчёты, визуализации и метрики, обеспечивая корректность и прозрачность представленной информации.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-quote2.svg" alt="Web development icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title" style="color: var(--orange-yellow-crayola)">Data Engineer</h4>
+                <p class="service-item-text">
+                  Разрабатываю и поддерживаю инфраструктуру данных: базы данных, ETL-процессы, интеграции и автоматизацию обработки. Обеспечиваю стабильность и доступность данных для аналитических задач.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app2.svg" alt="mobile app icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title" style="color: var(--orange-yellow-crayola)">Data Scientist</h4>
+                <p class="service-item-text">
+                  Создаю и обучаю модели машинного обучения, подготавливаю данные и реализую алгоритмы для решения задач классификации, прогнозирования и анализа.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev2.svg" alt="camera icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title" style="color: var(--orange-yellow-crayola)">Backend dev</h4>
+                <p class="service-item-text">
+                  Разрабатываю серверную логику приложений: архитектуру, API, работу с базами данных и внешними сервисами. Реализую функциональность, обеспечивающую стабильность и масштабируемость системы.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+        </section>
+
+        <!--TESTIMONIALS-->
+        <section class="testimonials">
+          <h3 class="h3 testimonials-title">Рекомендация</h3>
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item data-date="31 августа, 2025">
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-anuar.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Жангозин Ануар Канатович</h4>
+                <h5 class="h5 testimonials-item-title" data-testimonials-title>Председатель Правления </h5>
+                <h5 class="h5 testimonials-item-title" data-testimonials-title> <em>АОО «Назарбаев Интеллектуальные школы»</em></h5>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p style="color: var(--emerald)">Благодарственное письмо</p>
+                  <p>
+                    От всей души поздравляю Вас с Днём Конституции Республики Казахстан!
+                    Выражаю искреннюю благодарность за Ваш активный вклад в развитие автономной организации образования «Назарбаев Интеллектуальные школы».
+                    В этот знаменательный день желаю Вам и Вашей семье здоровья, счастья, благополучия, а также больших успехов и новых достижений в профессиональной деятельности.
+                  </p>
+                  <button class="open-pdf-btn" data-pdf="./assets/docs/20250831_t_letter.pdf">
+                    <ion-icon name="document-text-outline" class="pdf-icon"></ion-icon><span>Открыть письмо (PDF)</span>
+                  </button>
+                </div>
+              </div>
+            </li>
+
+            <!-- <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item data-date="01 января, 2025">
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Сапаков Думан Набильевич</h4>
+                <h5 class="h5 testimonials-item-title" data-testimonials-title>Директор</h5>
+                <h5 class="h5 testimonials-item-title" data-testimonials-title><em>«Центр педагогических измерений» АОО «НИШ»</em></h5>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p style="color: var(--orange-yellow-crayola)">Рекомендательное письмо</p>
+                  <p>
+                    Нурдаулет проявил себя как компетентный и целеустремлённый специалист с глубокими знаниями в области анализа данных и программной инженерии. 
+                    Он умеет системно подходить к решению задач, грамотно интерпретирует результаты и предлагает практические решения на основе анализа. 
+                    Его профессионализм, ответственность и интерес к развитию заслуживают высокой оценки.
+                  </p>
+                  <button class="open-pdf-btn" data-pdf="./assets/docs/20250831_t_letter2.pdf">
+                    <ion-icon name="document-text-outline" class="pdf-icon"></ion-icon><span>Открыть письмо (PDF)</span>
+                  </button>
+                </div>
+              </div>
+            </li> -->
+
+            <!-- <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item data-date="31 декабря, 2025">
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Алменов Ербол Тажиханович</h4>
+                <h5 class="h5 testimonials-item-title" data-testimonials-title>Заместитель директора </h5>
+                <h5 class="h5 testimonials-item-title" data-testimonials-title><em>«Центр педагогических измерений» По статистической обработке данных</em></h5>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p style="color: var(--orange-yellow-crayola)">Рекомендательное письмо</p>
+                  <p>
+                    В процессе совместной работы Нурдаулет проявил себя как ответственный, инициативный и высококвалифицированный специалист. 
+                    Он демонстрирует глубокие знания в области аналитики и уверенно решает сложные технические задачи. 
+                    Особенно ценю его внимательность к деталям, умение работать в команде и стремление к качественному результату. 
+                    Его подход к делу заслуживает высокой оценки.
+                  </p>
+                  <button class="open-pdf-btn" data-pdf="./assets/docs/20250831_t_letter3.pdf">
+                    <ion-icon name="document-text-outline" class="pdf-icon"></ion-icon><span>Открыть письмо (PDF)</span>
+                  </button>
+                </div>
+              </div>
+            </li> -->
+            
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item data-date="23 января, 2023">
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-maratbek.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Габдуллин Маратбек Тулебергенович</h4>
+                <h5 class="h5 testimonials-item-title" data-testimonials-title>Ректор</h5>
+                <h5 class="h5 testimonials-item-title" data-testimonials-title><em>Казахстанско-Британский технический университет</em></h5>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p style="color: var(--emerald)">Благодарственное письмо</p>
+                  <p>
+                    Выражаем Вам глубокую благодарность и признательность за отличную успеваемость на протяжении всех учебных лет. 
+                    Вас по праву можно назвать одним из лучших студентов Казахстанско-Британского технического университета, 
+                    поскольку Вы внесли значительный вклад в развитие студенческой жизни и достигли самых высоких результатов. 
+                    Мы всегда будем помнить Вас как ответственного, добросовестного и инициативного члена коллектива, обладающего прекрасными лидерскими качествами. 
+                    Желаем, чтобы присущие Вам целеустремленность, трудолюбие и самоорганизованность привели Вас к исключительно высоким победам. 
+                    Благодарим Вас за годы упорной учёбы, добросовестное выполнение всех заданий и чуткое отношение к делу.
+                  </p>
+                  <button class="open-pdf-btn" data-pdf="./assets/docs/20230123_t_letter.pdf">
+                    <ion-icon name="document-text-outline" class="pdf-icon"></ion-icon><span>Открыть письмо (PDF)</span>
+                  </button>
+                </div>
+              </div>
+            </li>
+
+            <!-- <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Джумабаева Жанна Курбанбековна</h4>
+                <h5 class="h5 testimonials-item-title" data-testimonials-title>Эксперт, PhD</h5>
+                <h5 class="h5 testimonials-item-title" data-testimonials-title><em>Отдел исследований и анализа данных</em></h5>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p style="color: var(--orange-yellow-crayola)">Рекомендательное письмо</p>
+                  <p>
+                    Нурдаулет зарекомендовал себя как инициативный и внимательный к деталям специалист. 
+                    Он отличается аналитическим мышлением, высоким уровнем ответственности и умением находить эффективные решения в сложных ситуациях. 
+                    Его стремление к совершенству и профессиональный подход делают его ценным членом любой команды.
+                  </p>
+                </div>
+              </div>
+            </li> -->
+
+          </ul>
+        </section>
+
+
+        <!--TESTIMONALS MODAL-->
+        <div class="modal-container" data-modal-container>
+          <div class="overlay" data-overlay></div>
+          <section class="testimonials-modal">
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+            <div class="modal-content">
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+              <time datetime="2024-09-01">1 сентября, 2024</time>
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+
+
+        <!--CLIENTS-->
+        <section class="clients" id="certificatesSection">
+          <div class="clients-header-row">
+            <h3 class="h3 clients-title">Дипломы & Сертификаты</h3>
+            <button class="cert-list-toggle" id="openCertificatesList" type="button">
+              <ion-icon name="list-outline"></ion-icon>
+              <span>Список</span>
+            </button>
+          </div>
+
+          <div class="clients-scroll-wrapper">
+            <ul class="clients-list has-scrollbar">
+              <li class="clients-item">
+                <button 
+                  class="open-pdf-btn client-pdf-thumb vertical" 
+                  data-pdf="./assets/docs/20250502_cerf_v2.pdf" 
+                  data-type="certificate"
+                  data-title="Cito International | CitoLab"
+                  data-label="R · 2025">
+                  <img src="./assets/images/20250502_cerf.png" alt="Certificate preview">
+                </button>
+              </li>
+
+              <li class="clients-item">
+                <button 
+                  class="open-pdf-btn client-pdf-thumb horizontal" 
+                  data-pdf="./assets/docs/Hackerrank_sql_basic_cerf.pdf" 
+                  data-type="course"
+                  data-title="HackerRank SQL · Basic"
+                  data-label="SQL · 2025">
+                  <img src="./assets/images/20251017_cerf.png" alt="Certificate preview">
+                </button>
+              </li>
+
+              <li class="clients-item">
+                <button 
+                  class="open-pdf-btn client-pdf-thumb horizontal" 
+                  data-pdf="./assets/docs/Hackerrank_sql_intermediate_cerf.pdf" 
+                  data-type="course"
+                  data-title="HackerRank SQL · Intermediate"
+                  data-label="SQL · 2025">
+                  <img src="./assets/images/20251024_cerf (2).png" alt="Certificate preview">
+                </button>
+              </li>
+
+              <li class="clients-item">
+                <button 
+                  class="open-pdf-btn client-pdf-thumb horizontal" 
+                  data-pdf="./assets/docs/Hackerrank_sql_advanced_cerf.pdf" 
+                  data-type="course"
+                  data-title="HackerRank SQL · Advanced"
+                  data-label="SQL · 2025">
+                  <img src="./assets/images/20251125_cerf.jpg" alt="Certificate preview">
+                </button>
+              </li>
+
+              <li class="clients-item">
+                <button 
+                  class="open-pdf-btn client-pdf-thumb horizontal" 
+                  data-pdf="./assets/docs/Hackerrank_python_basic_cerf.pdf" 
+                  data-type="course"
+                  data-title="HackerRank Python · Basic"
+                  data-label="Python · 2025">
+                  <img src="./assets/images/20251024_cerf.png" alt="Certificate preview">
+                </button>
+              </li>
+
+              <!-- Горизонтальный диплом -->
+              <li class="clients-item">
+                <button 
+                  class="open-pdf-btn client-pdf-thumb horizontal" 
+                  data-pdf="./assets/docs/20230123_diploma.pdf" 
+                  data-type="diploma"
+                  data-title="Диплом бакалавра"
+                  data-label="КБТУ · 2023">
+                  <img src="./assets/images/20230123_dipl.png" alt="Diploma preview">
+                </button>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </article>
+
+      <!--#RESUME-->
+      <article class="resume" data-page="resume">
+        <header>
+          <h2 class="h2 article-title">Резюме</h2>
+        </header>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Образование</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Казахстанско-Британский технический университет 📍 Алматы, Казахстан</h4>
+              <span>Сен. 2019 — Дек. 2022</span>
+              <p class="timeline-text">
+                Степень бакалавра по специальности «Математика и компьютерное моделирование».
+                <br>
+                Основное внимание уделял анализу данных, базам данных (MySQL, PostgreSQL) и прикладным математическим методам.
+                Программа включала дисциплины по теории вероятностей и математической статистике, численным методам, алгебре, дифференциальным уравнениям, финансовой математике и риск-менеджменту.
+                Изучал также анализ математических моделей в экономике и основы компьютерного зрения и глубокого обучения (CV & ML).
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Simon Fraser University 📍 Ванкувер, Канада</h4>
+              <span>Янв. 2018 — Авг. 2019</span>
+              <p class="timeline-text">
+                Обучался по направлению международное право и политические науки, после чего переориентировался на компьютерные науки. 
+                Этот переход стал ключевым этапом в формировании аналитического мышления и интереса к работе с данными.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Школа-лицей «NURORDA» 📍 Астана, Казахстан</h4>
+              <span>Сен. 2008 — Май 2016</span>
+              <p class="timeline-text">
+                Получил фундаментальные знания по математике, физике и информатике. Участвовал в олимпиадах и проектах по математике и информатике.
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+            <h3 class="h3">
+              Опыт работы 
+              <!-- <span id="experience-duration" style="font-size: 0.9em; color: var(--orange-yellow-crayola);"></span> -->
+              <span id="experience-duration" class="experience-inline"></span>
+            </h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Филиал «Центр педагогических измерений» АОО «Назарбаев Интеллектуальные школы»</h4>
+              <h5 class="h5 timeline-item-title"><ion-icon name="person-circle-outline"></ion-icon>  <i>Старший менеджер | Дата Аналитик-Статистик</i></h5>
+              <span>Фев. 2024 — сейчас</span>
+              <ul class="timeline-text">
+                <li>Проводил ad-hoc анализ для выявления тенденций и решения образовательных задач; создавал отчёты и визуализации по регионам, школам и учащимся.</li>
+                <li>Реализовал A/B-тестирование изменений в продуктах и процессах с использованием <em>Python (scipy, statsmodels)</em>.</li>
+                <li>Выполнил ABC/XYZ-анализ для категоризации школ и учащихся: приоритизация по вкладу в результаты и оценка стабильности показателей.</li>
+                <li>Разрабатывал и оптимизировал реляционные базы данных (<em>PostgreSQL, MySQL</em>): проектирование таблиц, индексов, связей, нормализация и оптимизация SQL-запросов (<code>JOIN</code>, <code>VIEWS</code>, <code>CTE</code>).</li>
+                <li>Создавал ETL-процессы для интеграции данных из <em>CSV, Excel, API</em>; автоматизировал обработку через <em>Python (pandas, SQLAlchemy, Openpyxl)</em>.</li>
+                <li>Подготовил более 50 000+ индивидуальных отчётов для 250+ школ, обеспечивая прозрачность академических результатов.</li>
+                <li>Разрабатывал дашборды и визуализации в <em>Power BI, Excel, PowerPoint</em> для управленческих решений.</li>
+                <li>Применял модели теории ответа на задание (IRT) в <em>R</em> для анализа пробных экзаменов и оценки качества заданий.</li>
+                <li>Выполнял статистический анализ (нормализация, корреляционный, регрессионный, факторный, кластерный, когортный) с визуализацией результатов.</li>
+                <li>Оптимизировал отчётность в <em>Excel (VBA, Pivot Tables)</em>, ускорив обработку данных между отделами.</li>
+              </ul>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">MNB Service</h4>
+              <h5 class="h5 timeline-item-title"><ion-icon name="person-circle-outline"></ion-icon>  <i>Руководитель</i></h5>              
+              <span>Окт. 2020 — Янв. 2024</span>
+              <ul class="timeline-text">
+                <li>Руководил хозяйственной деятельностью компании в сфере строительства и управления коммерческой недвижимостью.</li>
+                <li>Осуществлял руководство индивидуальным предпринимательством, специализировавшимся на строительстве объектов площадью до <strong>4000 м²</strong> — торговые павильоны, офисные здания, торговые дома из <em>металлоконструкций, сэндвич-панелей и железобетона</em>.</li>
+                <li>Организовывал и контролировал <strong>ремонт квартир под ключ</strong>: составлял план и смету, подбирал специалистов по этапам (отделка, электрика, сантехника и др.).</li>
+                <li>Контролировал выполнение договоров, использование финансовых, трудовых и материальных ресурсов.</li>
+                <li>Координировал работу отделов и подрядчиков, обеспечивая своевременное выполнение проектов.</li>
+                <li>Участвовал в формировании <strong>ценовой политики</strong> и оптимизации затрат компании.</li>
+                <li>Проводил <strong>анализ данных</strong> для оценки эффективности и поддержки стратегических управленческих решений.</li>
+              </ul>
+            </li>
+
+          </ol>
+        </section>
+
+        <!-- <section class="skill">
+          <h3 class="h3 skills-title">My skills</h3>
+          <ul class="skills-list content-card">
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Web design</h5>
+                <data value="80">80%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Graphic design</h5>
+                <data value="70">70%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Branding</h5>
+                <data value="90">90%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">WordPress</h5>
+                <data value="50">50%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+            </li>
+          </ul>
+        </section> -->
+
+    
+        <section class="skill">
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <div class="skills-slider-wrapper">
+            <div class="skills-slider" id="skillsSlider">
+
+              <!-- SLIDE 1 -->
+              <div class="skills-slide">
+                <h4 class="skills-group-title">Языки программирования</h4>
+                <ul class="skills-list content-card">
+
+                  <li class="skills-item">
+                    <div class="title-wrapper">
+                      <h5 class="h5"><b>Python — </b><em>(Pandas, Numpy, SQLAlchemy, Psycopg2, Openpyxl, Scipy, Statsmodels)</em></h5>
+                      <data value="95">95%</data>
+                    </div>
+                    <div class="skill-progress-bg">
+                      <div class="skill-progress-fill" data-fill="95"></div>
+                    </div>
+                  </li>
+
+                  <li class="skills-item">
+                    <div class="title-wrapper">
+                      <h5 class="h5"><b>PostgreSQL — </b><em>(JOIN, CTE, View, Index, Transaction, ERD, OLAP/OLTP)</em></h5>
+                      <data value="90">90%</data>
+                    </div>
+                    <div class="skill-progress-bg">
+                      <div class="skill-progress-fill" data-fill="90"></div>
+                    </div>
+                  </li>
+
+                  <li class="skills-item">
+                    <div class="title-wrapper">
+                      <h5 class="h5"><b>R — </b><em>(DexterMML, Dplyr, Tidyr, ggplot2, tidymodels, xgboost)</em></h5>
+                      <data value="85">85%</data>
+                    </div>
+                    <div class="skill-progress-bg">
+                      <div class="skill-progress-fill" data-fill="85"></div>
+                    </div>
+                  </li>
+
+                  <li class="skills-item">
+                    <div class="title-wrapper">
+                      <h5 class="h5"><b>HTML / CSS / JavaScript — </b><em>(Tags, Styles, DOM)</em></h5>
+                      <data value="70">70%</data>
+                    </div>
+                    <div class="skill-progress-bg">
+                      <div class="skill-progress-fill" data-fill="70"></div>
+                    </div>
+                  </li>
+
+                  <li class="skills-item">
+                    <div class="title-wrapper">
+                      <h5 class="h5"><b>C++ — </b><em>(std, vector, pointers, loop)</em></h5>
+                      <data value="40">40%</data>
+                    </div>
+                    <div class="skill-progress-bg">
+                      <div class="skill-progress-fill" data-fill="40"></div>
+                    </div>
+                  </li>
+
+                </ul>
+              </div>
+
+              <!-- SLIDE 2 -->
+              <div class="skills-slide">
+                <h4 class="skills-group-title">Office & BI Tools</h4>
+                <ul class="skills-list content-card">
+
+                  <li class="skills-item">
+                    <div class="title-wrapper">
+                      <h5 class="h5"><b>Excel — </b><em>(Formulas, Pivot, PowerQuery, VBA)</em></h5>
+                      <data value="100">100%</data>
+                    </div>
+                    <div class="skill-progress-bg">
+                      <div class="skill-progress-fill" data-fill="100"></div>
+                    </div>
+                  </li>
+
+                  <li class="skills-item">
+                    <div class="title-wrapper">
+                      <h5 class="h5"><b>Power BI — </b><em>(DAX, визуализация)</em></h5>
+                      <data value="70">70%</data>
+                    </div>
+                    <div class="skill-progress-bg">
+                      <div class="skill-progress-fill" data-fill="70"></div>
+                    </div>
+                  </li>
+
+                  <li class="skills-item">
+                    <div class="title-wrapper">
+                      <h5 class="h5"><b>Word — </b><em>(оформление документов)</em></h5>
+                      <data value="100">100%</data>
+                    </div>
+                    <div class="skill-progress-bg">
+                      <div class="skill-progress-fill" data-fill="100"></div>
+                    </div>
+                  </li>
+
+                  <li class="skills-item">
+                    <div class="title-wrapper">
+                      <h5 class="h5"><b>PowerPoint — </b><em>(презентации)</em></h5>
+                      <data value="100">100%</data>
+                    </div>
+                    <div class="skill-progress-bg">
+                      <div class="skill-progress-fill" data-fill="100"></div>
+                    </div>
+                  </li>
+
+                </ul>
+              </div>
+
+              <!-- SLIDE 3 -->
+              <!-- <div class="skills-slide">
+                <h4 class="skills-group-title">Technologies & Frameworks</h4>
+                <ul class="skills-list content-card">
+
+                  <li class="skills-item">
+                    <div class="title-wrapper">
+                      <h5 class="h5"><b>FastAPI — </b><em>(REST API, Auth)</em></h5>
+                      <data value="75">75%</data>
+                    </div>
+                    <div class="skill-progress-bg">
+                      <div class="skill-progress-fill" data-fill="75"></div>
+                    </div>
+                  </li>
+
+                  <li class="skills-item">
+                    <div class="title-wrapper">
+                      <h5 class="h5"><b>React — </b><em>(components, props)</em></h5>
+                      <data value="55">55%</data>
+                    </div>
+                    <div class="skill-progress-bg">
+                      <div class="skill-progress-fill" data-fill="55"></div>
+                    </div>
+                  </li>
+
+                  <li class="skills-item">
+                    <div class="title-wrapper">
+                      <h5 class="h5"><b>Pandas / NumPy — </b><em>(EDA, агрегирование)</em></h5>
+                      <data value="85">85%</data>
+                    </div>
+                    <div class="skill-progress-bg">
+                      <div class="skill-progress-fill" data-fill="85"></div>
+                    </div>
+                  </li>
+
+                  <li class="skills-item">
+                    <div class="title-wrapper">
+                      <h5 class="h5"><b>Scikit-Learn — </b><em>(модели, метрики)</em></h5>
+                      <data value="70">70%</data>
+                    </div>
+                    <div class="skill-progress-bg">
+                      <div class="skill-progress-fill" data-fill="70"></div>
+                    </div>
+                  </li>
+
+                </ul>
+              </div> -->
+
+              <!-- SLIDE 4 -->
+              <div class="skills-slide">
+                <h4 class="skills-group-title">Infrastructure & DevOps</h4>
+                <ul class="skills-list content-card">
+
+                  <li class="skills-item">
+                    <div class="title-wrapper">
+                      <h5 class="h5"><b>Docker — </b><em>(контейнеры)</em></h5>
+                      <data value="40">40%</data>
+                    </div>
+                    <div class="skill-progress-bg">
+                      <div class="skill-progress-fill" data-fill="40"></div>
+                    </div>
+                  </li>
+
+                  <li class="skills-item">
+                    <div class="title-wrapper">
+                      <h5 class="h5"><b>Kubernetes — </b><em>(Pods, Services)</em></h5>
+                      <data value="15">15%</data>
+                    </div>
+                    <div class="skill-progress-bg">
+                      <div class="skill-progress-fill" data-fill="15"></div>
+                    </div>
+                  </li>
+
+                  <li class="skills-item">
+                    <div class="title-wrapper">
+                      <h5 class="h5"><b>Nginx — </b><em>(reverse proxy)</em></h5>
+                      <data value="60">60%</data>
+                    </div>
+                    <div class="skill-progress-bg">
+                      <div class="skill-progress-fill" data-fill="60"></div>
+                    </div>
+                  </li>
+
+                  <li class="skills-item">
+                    <div class="title-wrapper">
+                      <h5 class="h5"><b>AWS / Cloud</b></h5>
+                      <data value="40">40%</data>
+                    </div>
+                    <div class="skill-progress-bg">
+                      <div class="skill-progress-fill" data-fill="40"></div>
+                    </div>
+                  </li>
+
+                </ul>
+              </div>
+
+              <!-- SLIDE 5 -->
+              <div class="skills-slide">
+                <h4 class="skills-group-title">Automation & Integration</h4>
+                <ul class="skills-list content-card">
+
+                  <li class="skills-item">
+                    <div class="title-wrapper">
+                      <h5 class="h5"><b>n8n — </b><em>(workflows, интеграции)</em></h5>
+                      <data value="70">70%</data>
+                    </div>
+                    <div class="skill-progress-bg">
+                      <div class="skill-progress-fill" data-fill="70"></div>
+                    </div>
+                  </li>
+
+                  <li class="skills-item">
+                    <div class="title-wrapper">
+                      <h5 class="h5"><b>SendPulse — </b><em>(боты, автоматизация)</em></h5>
+                      <data value="65">65%</data>
+                    </div>
+                    <div class="skill-progress-bg">
+                      <div class="skill-progress-fill" data-fill="65"></div>
+                    </div>
+                  </li>
+
+                  <li class="skills-item">
+                    <div class="title-wrapper">
+                      <h5 class="h5"><b>Telegram Bots — </b><em>(API, логика диалогов)</em></h5>
+                      <data value="75">75%</data>
+                    </div>
+                    <div class="skill-progress-bg">
+                      <div class="skill-progress-fill" data-fill="75"></div>
+                    </div>
+                  </li>
+
+                  <li class="skills-item">
+                    <div class="title-wrapper">
+                      <h5 class="h5"><b>CI/CD (GitHub, GitLab) — </b><em>(pipelines)</em></h5>
+                      <data value="65">65%</data>
+                    </div>
+                    <div class="skill-progress-bg">
+                      <div class="skill-progress-fill" data-fill="65"></div>
+                    </div>
+                  </li>
+
+                </ul>
+              </div>
+                <!-- SLIDE 6: Languages with CEFR Scale -->
+              <div class="skills-slide">
+                <h4 class="skills-group-title">Языки</h4>
+                <ul class="skills-list content-card">
+
+                  <li class="skills-item">
+                    <div class="title-wrapper">
+                      <h5 class="h5"><b>Казахский</b> — <em>Свободно</em></h5>
+                      <data value="C2">C2</data>
+                    </div>
+                    <!-- Метки уровней над шкалой -->
+                    <div class="cefr-labels">
+                      <span>A1</span>
+                      <span>A2</span>
+                      <span>B1</span>
+                      <span>B2</span>
+                      <span>C1</span>
+                      <span>C2</span>
+                    </div>
+                    <!-- Полоска прогресса -->
+                    <div class="skill-progress-bg">
+                      <div class="language-progress-fill language-fill" data-level="C2"></div>
+                    </div>
+                  </li>
+
+                  <li class="skills-item">
+                    <div class="title-wrapper">
+                      <h5 class="h5"><b>Русский</b> — <em>Свободно</em></h5>
+                      <data value="C2">C2</data>
+                    </div>
+                    <div class="cefr-labels">
+                      <span>A1</span>
+                      <span>A2</span>
+                      <span>B1</span>
+                      <span>B2</span>
+                      <span>C1</span>
+                      <span>C2</span>
+                    </div>
+                    <div class="skill-progress-bg">
+                      <div class="language-progress-fill language-fill" data-level="C2"></div>
+                    </div>
+                  </li>
+
+                  <li class="skills-item">
+                    <div class="title-wrapper">
+                      <h5 class="h5"><b>Английский</b> — <em>Продвинутый уровень</em></h5>
+                      <data value="B2">B2</data>
+                    </div>
+                    <div class="cefr-labels">
+                      <span>A1</span>
+                      <span>A2</span>
+                      <span>B1</span>
+                      <span>B2</span>
+                      <span>C1</span>
+                      <span>C2</span>
+                    </div>
+                    <div class="skill-progress-bg">
+                      <div class="language-progress-fill language-fill" data-level="B2"></div>
+                    </div>
+                  </li>
+
+                  <li class="skills-item">
+                    <div class="title-wrapper">
+                      <h5 class="h5"><b>Турецкий</b> — <em>Элементарный уровень</em></h5>
+                      <data value="A1">A1</data>
+                    </div>
+                    <div class="cefr-labels">
+                      <span>A1</span>
+                      <span>A2</span>
+                      <span>B1</span>
+                      <span>B2</span>
+                      <span>C1</span>
+                      <span>C2</span>
+                    </div>
+                    <div class="skill-progress-bg">
+                      <div class="language-progress-fill language-fill" data-level="A1"></div>
+                    </div>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+
+            <div class="skills-slider-controls">
+              <button class="skills-slider-btn" id="prevBtn">&#10094;</button>
+              <button class="skills-slider-btn" id="nextBtn">&#10095;</button>
+            </div>
+
+            <div class="skills-dots" id="skillsDots"></div>
+
+          </div>
+        </section>
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Проекты</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Finance</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Dashboard</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">AI agent</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Marketing</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">CI/CD</h3>
+
+                <p class="project-category">Backend</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">AWS/Cloudflare</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">n8n project</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Task Manager</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Useful tools & functions </h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #BLOG
+      -->
+      <article class="blog" data-page="blog">
+        <header>
+          <h2 class="h2 article-title">Блог</h2>
+        </header>
+        <br>
+        <br>
+        <h5 class="h5">В процессе ...</h5>
+        <!-- <section class="blog-posts">
+          <ul class="blog-posts-list">
+            <li class="blog-post-item">
+              <a href="blog-data-analytics.html" target="_blank">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+                    <span class="dot"></span>
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+                  <p class="blog-text">
+                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="blog-post-item">
+              <a href="#">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+                    <span class="dot"></span>
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+                  <p class="blog-text">
+                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+                    <span class="dot"></span>
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+                  <p class="blog-text">
+                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+                    <span class="dot"></span>
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+                  <p class="blog-text">
+                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+                    <span class="dot"></span>
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+                  <p class="blog-text">
+                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+                    <span class="dot"></span>
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">Design digest #79</h3>
+                  <p class="blog-text">
+                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                  </p>
+                </div>
+              </a>
+            </li>
+          </ul>
+
+        </section> -->
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5430.72947645699!2d71.40598759925724!3d51.08729323769144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sru!2skz!4v1759995486052!5m2!1sru!2skz" 
+            width="600" height="450" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" autocomplete="name" required data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="Email address" autocomplete="email" required data-form-input>
+            </div>
+
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+    <!-- Модальное окно со списком дипломов и сертификатов -->
+<!-- === Modal: Список документов (дипломы / сертификаты / курсы) === -->
+<div class="cert-list-overlay" id="certListOverlay">
+  <div class="cert-list-modal">
+
+    <div class="cert-list-header">
+      <h3 class="h3 cert-list-title">
+        <ion-icon name="ribbon-outline"></ion-icon>
+        <span>Полный список</span>
+      </h3>
+
+      <button class="cert-list-close" type="button">
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+    </div>
+
+    <p class="cert-list-subtitle">
+      Нажмите на документ, чтобы открыть PDF
+    </p>
+
+    <h4 class="h4 cert-section-title">Дипломы</h4>
+    <ul class="cert-list-grid" data-cert-list-diploma></ul>
+
+    <h4 class="h4 cert-section-title">Сертификаты</h4>
+    <ul class="cert-list-grid" data-cert-list-certificate></ul>
+
+    <h4 class="h4 cert-section-title">Курсы и экзамены</h4>
+    <ul class="cert-list-grid" data-cert-list-course></ul>
+
+  </div>
+</div>
+
+
+  <div class="pdf-viewer-overlay" id="pdfViewerOverlay">
+      <div class="pdf-viewer-content">
+        <iframe src="" id="pdfFrame" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
